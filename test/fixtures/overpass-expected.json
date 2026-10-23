@@ -1,0 +1,250 @@
+{
+ "site": {
+  "lat": 34.285,
+  "lng": -119.295,
+  "radiusM": 4828
+ },
+ "amenity": {
+  "elements": [
+   {
+    "type": "node",
+    "id": 1,
+    "lat": 34.286,
+    "lon": -119.294,
+    "tags": {
+     "amenity": "library",
+     "name": "Fixture Library",
+     "library:type": "public",
+     "addr:housenumber": "651",
+     "addr:street": "East Main Street",
+     "addr:city": "Ventura",
+     "website": "https://example.org",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "node",
+    "id": 2,
+    "lat": 34.287,
+    "lon": -119.295,
+    "tags": {
+     "shop": "supermarket",
+     "name": "Fixture Market",
+     "brand": "Fixture Foods",
+     "opening_hours": "Mo-Su 07:00-22:00",
+     "check_date": "2025-01-01"
+    }
+   },
+   {
+    "type": "node",
+    "id": 3,
+    "lat": 34.284,
+    "lon": -119.296,
+    "tags": {
+     "shop": "convenience"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4,
+    "lat": 34.2851,
+    "lon": -119.2951,
+    "tags": {
+     "highway": "bus_stop",
+     "name": "Main & Oak",
+     "bench": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "type": "node",
+    "id": 5,
+    "lat": 34.29,
+    "lon": -119.3,
+    "tags": {
+     "railway": "station",
+     "station": "light_rail",
+     "name": "Fixture Station"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6,
+    "lat": 34.283,
+    "lon": -119.29,
+    "tags": {
+     "amenity": "doctors",
+     "healthcare": "doctor",
+     "healthcare:speciality": "orthopaedics",
+     "name": "Fixture Ortho"
+    }
+   },
+   {
+    "type": "node",
+    "id": 7,
+    "lat": 34.288,
+    "lon": -119.292,
+    "tags": {
+     "amenity": "social_facility",
+     "social_facility:for": "senior",
+     "name": "Fixture Senior Centre"
+    }
+   },
+   {
+    "type": "node",
+    "id": 10,
+    "lat": 34.281,
+    "lon": -119.299,
+    "tags": {
+     "shop": "chemist",
+     "brand": "CVS Pharmacy",
+     "name": "CVS"
+    }
+   },
+   {
+    "type": "node",
+    "id": 12,
+    "lat": 34.2865,
+    "lon": -119.2945,
+    "tags": {
+     "amenity": "pharmacy",
+     "dispensing": "yes",
+     "name": "Fixture Pharmacy, \"Rx\" & Co"
+    }
+   },
+   {
+    "type": "way",
+    "id": 100,
+    "center": {
+     "lat": 34.281,
+     "lon": -119.289
+    },
+    "tags": {
+     "leisure": "park",
+     "access": "private",
+     "name": "Private Fixture Park"
+    }
+   },
+   {
+    "type": "way",
+    "id": 110,
+    "center": {
+     "lat": 34.3,
+     "lon": -119.3
+    },
+    "tags": {
+     "leisure": "park",
+     "name": "Fixture Big Park",
+     "operator": "City"
+    }
+   },
+   {
+    "type": "way",
+    "id": 160,
+    "center": {
+     "lat": 34.29,
+     "lon": -119.297
+    },
+    "tags": {
+     "amenity": "college",
+     "name": "Fixture Community College"
+    }
+   },
+   {
+    "type": "relation",
+    "id": 200,
+    "center": {
+     "lat": 34.274,
+     "lon": -119.277
+    },
+    "tags": {
+     "type": "multipolygon",
+     "leisure": "park",
+     "name": "Fixture Relation Park"
+    }
+   }
+  ]
+ },
+ "barrier": {
+  "elements": [
+   {
+    "type": "way",
+    "id": 120,
+    "geometry": [
+     {
+      "lat": 34.27,
+      "lon": -119.2935
+     },
+     {
+      "lat": 34.29,
+      "lon": -119.2935
+     },
+     {
+      "lat": 34.31,
+      "lon": -119.2935
+     }
+    ],
+    "tags": {
+     "highway": "motorway",
+     "ref": "US 101",
+     "name": "Ventura Freeway",
+     "lanes": "4"
+    }
+   },
+   {
+    "type": "way",
+    "id": 135,
+    "geometry": [
+     {
+      "lat": 34.26,
+      "lon": -119.32
+     },
+     {
+      "lat": 34.32,
+      "lon": -119.27
+     }
+    ],
+    "tags": {
+     "railway": "rail",
+     "usage": "main",
+     "name": "Coast Line"
+    }
+   },
+   {
+    "type": "way",
+    "id": 140,
+    "geometry": [
+     {
+      "lat": 34.275,
+      "lon": -119.305
+     },
+     {
+      "lat": 34.278,
+      "lon": -119.28
+     }
+    ],
+    "tags": {
+     "waterway": "river",
+     "name": "Fixture River"
+    }
+   }
+  ]
+ },
+ "substation": {
+  "elements": [
+   {
+    "type": "node",
+    "id": 9,
+    "lat": 34.295,
+    "lon": -119.285,
+    "tags": {
+     "power": "substation",
+     "name": "Fixture Substation",
+     "operator": "Fixture Power",
+     "voltage": "66000;12000",
+     "substation": "distribution"
+    }
+   }
+  ]
+ }
+}

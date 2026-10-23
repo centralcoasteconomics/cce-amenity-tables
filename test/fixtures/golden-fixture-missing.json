@@ -1,0 +1,4 @@
+{ "about": "A golden set with one place absent from the fixture: the build must hold.", "places": [
+ { "label": "Fixture Library", "layer": "pois", "tag": "amenity=library", "name": "Fixture Library", "lat": 34.286, "lng": -119.294, "withinM": 200 },
+ { "label": "Not in the fixture", "layer": "pois", "tag": "amenity=hospital", "name": "Nowhere General", "lat": 34.286, "lng": -119.294, "withinM": 2000 }
+]}

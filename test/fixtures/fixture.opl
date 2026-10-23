@@ -1,0 +1,22 @@
+n1 Tamenity=library,name=Fixture%20%Library,library:type=public,addr:housenumber=651,addr:street=East%20%Main%20%Street,addr:city=Ventura,website=https://example.org,wheelchair=yes x-119.294 y34.286
+n2 Tshop=supermarket,name=Fixture%20%Market,brand=Fixture%20%Foods,opening_hours=Mo-Su%20%07:00-22:00,check_date=2025-01-01 x-119.295 y34.287
+n3 Tshop=convenience x-119.296 y34.284
+n4 Thighway=bus_stop,name=Main%20%&%20%Oak,bench=yes,public_transport=platform x-119.2951 y34.2851
+n5 Trailway=station,station=light_rail,name=Fixture%20%Station x-119.3 y34.29
+n6 Tamenity=doctors,healthcare=doctor,healthcare:speciality=orthopaedics,name=Fixture%20%Ortho x-119.29 y34.283
+n7 Tamenity=social_facility,social_facility:for=senior,name=Fixture%20%Senior%20%Centre x-119.292 y34.288
+n9 Tpower=substation,name=Fixture%20%Substation,operator=Fixture%20%Power,voltage=66000;12000,substation=distribution x-119.285 y34.295
+n10 Tshop=chemist,brand=CVS%20%Pharmacy,name=CVS x-119.299 y34.281
+n11 Tamenity=library,name=Far%20%Library x-119.295 y34.5
+n12 Tamenity=pharmacy,dispensing=yes,name=Fixture%20%Pharmacy%2c%%20%"Rx"%20%&%20%Co x-119.2945 y34.2865
+w100 Tleisure=park,access=private,name=Private%20%Fixture%20%Park Nn101x-119.29y34.28,n102x-119.288y34.28,n103x-119.288y34.282,n104x-119.29y34.282,n101x-119.29y34.28
+w110 Tleisure=park,name=Fixture%20%Big%20%Park,operator=City Nn111x-119.305y34.295,n112x-119.295y34.295,n113x-119.295y34.305,n114x-119.305y34.305,n111x-119.305y34.295
+w120 Thighway=motorway,ref=US%20%101,name=Ventura%20%Freeway,lanes=4 Nn121x-119.2935y34.27,n122x-119.2935y34.29,n123x-119.2935y34.31
+w130 Trailway=rail,service=yard Nn131x-119.298y34.286,n132x-119.297y34.287
+w135 Trailway=rail,usage=main,name=Coast%20%Line Nn136x-119.32y34.26,n137x-119.27y34.32
+w140 Twaterway=river,name=Fixture%20%River Nn141x-119.305y34.275,n142x-119.28y34.278
+w145 Twaterway=river,name=Far%20%River Nn146x-119.3y34.6,n147x-119.29y34.61
+w160 Tamenity=college,name=Fixture%20%Community%20%College Nn161x-119.298y34.289,n162x-119.296y34.289,n163x-119.296y34.291,n161x-119.298y34.289
+w201 T Nn203x-119.28y34.27,n204x-119.275y34.27,n205x-119.275y34.275,n203x-119.28y34.27
+w202 T Nn206x-119.276y34.276,n207x-119.274y34.278,n208x-119.276y34.278,n206x-119.276y34.276
+r200 Ttype=multipolygon,leisure=park,name=Fixture%20%Relation%20%Park Mw201@outer,w202@outer

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="hand-made fixture">
+  <node id="1" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2860000" lon="-119.2940000">
+    <tag k="amenity" v="library"/>
+    <tag k="name" v="Fixture Library"/>
+    <tag k="library:type" v="public"/>
+    <tag k="addr:housenumber" v="651"/>
+    <tag k="addr:street" v="East Main Street"/>
+    <tag k="addr:city" v="Ventura"/>
+    <tag k="website" v="https://example.org"/>
+    <tag k="wheelchair" v="yes"/>
+  </node>
+  <node id="2" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2870000" lon="-119.2950000">
+    <tag k="shop" v="supermarket"/>
+    <tag k="name" v="Fixture Market"/>
+    <tag k="brand" v="Fixture Foods"/>
+    <tag k="opening_hours" v="Mo-Su 07:00-22:00"/>
+    <tag k="check_date" v="2025-01-01"/>
+  </node>
+  <node id="3" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2840000" lon="-119.2960000">
+    <tag k="shop" v="convenience"/>
+  </node>
+  <node id="4" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2851000" lon="-119.2951000">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Main &amp; Oak"/>
+    <tag k="bench" v="yes"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="5" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2900000" lon="-119.3000000">
+    <tag k="railway" v="station"/>
+    <tag k="station" v="light_rail"/>
+    <tag k="name" v="Fixture Station"/>
+  </node>
+  <node id="6" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2830000" lon="-119.2900000">
+    <tag k="amenity" v="doctors"/>
+    <tag k="healthcare" v="doctor"/>
+    <tag k="healthcare:speciality" v="orthopaedics"/>
+    <tag k="name" v="Fixture Ortho"/>
+  </node>
+  <node id="7" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2880000" lon="-119.2920000">
+    <tag k="amenity" v="social_facility"/>
+    <tag k="social_facility:for" v="senior"/>
+    <tag k="name" v="Fixture Senior Centre"/>
+  </node>
+  <node id="8" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2855000" lon="-119.2955000">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Not An Amenity"/>
+  </node>
+  <node id="9" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2950000" lon="-119.2850000">
+    <tag k="power" v="substation"/>
+    <tag k="name" v="Fixture Substation"/>
+    <tag k="operator" v="Fixture Power"/>
+    <tag k="voltage" v="66000;12000"/>
+    <tag k="substation" v="distribution"/>
+  </node>
+  <node id="10" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2810000" lon="-119.2990000">
+    <tag k="shop" v="chemist"/>
+    <tag k="brand" v="CVS Pharmacy"/>
+    <tag k="name" v="CVS"/>
+  </node>
+  <node id="11" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.5000000" lon="-119.2950000">
+    <tag k="amenity" v="library"/>
+    <tag k="name" v="Far Library"/>
+  </node>
+  <node id="12" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2865000" lon="-119.2945000">
+    <tag k="amenity" v="pharmacy"/>
+    <tag k="dispensing" v="yes"/>
+    <tag k="name" v='Fixture Pharmacy, "Rx" &amp; Co'/>
+  </node>
+  <node id="101" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2800000" lon="-119.2900000"/>
+  <node id="102" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2800000" lon="-119.2880000"/>
+  <node id="103" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2820000" lon="-119.2880000"/>
+  <node id="104" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2820000" lon="-119.2900000"/>
+  <node id="111" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2950000" lon="-119.3050000"/>
+  <node id="112" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2950000" lon="-119.2950000"/>
+  <node id="113" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.3050000" lon="-119.2950000"/>
+  <node id="114" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.3050000" lon="-119.3050000"/>
+  <node id="121" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2700000" lon="-119.2935000"/>
+  <node id="122" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2900000" lon="-119.2935000"/>
+  <node id="123" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.3100000" lon="-119.2935000"/>
+  <node id="131" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2860000" lon="-119.2980000"/>
+  <node id="132" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2870000" lon="-119.2970000"/>
+  <node id="136" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2600000" lon="-119.3200000"/>
+  <node id="137" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.3200000" lon="-119.2700000"/>
+  <node id="141" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2750000" lon="-119.3050000"/>
+  <node id="142" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2780000" lon="-119.2800000"/>
+  <node id="146" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.6000000" lon="-119.3000000"/>
+  <node id="147" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.6100000" lon="-119.2900000"/>
+  <node id="151" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2850000" lon="-119.2950000"/>
+  <node id="152" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2860000" lon="-119.2950000"/>
+  <node id="161" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2890000" lon="-119.2980000"/>
+  <node id="162" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2890000" lon="-119.2960000"/>
+  <node id="163" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2910000" lon="-119.2960000"/>
+  <node id="203" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2700000" lon="-119.2800000"/>
+  <node id="204" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2700000" lon="-119.2750000"/>
+  <node id="205" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2750000" lon="-119.2750000"/>
+  <node id="206" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2760000" lon="-119.2760000"/>
+  <node id="207" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2780000" lon="-119.2740000"/>
+  <node id="208" version="1" timestamp="2026-10-18T12:00:00Z" lat="34.2780000" lon="-119.2760000"/>
+  <way id="100" version="1" timestamp="2026-10-18T12:00:00Z">
+    <nd ref="101"/>
+    <nd ref="102"/>
+    <nd ref="103"/>
+    <nd ref="104"/>
+    <nd ref="101"/>
+    <tag k="leisure" v="park"/>
+    <tag k="access" v="private"/>
+    <tag k="name" v="Private Fixture Park"/>
+  </way>
+  <way id="110" version="1" timestamp="2026-10-18T12:00:00Z">
+    <nd ref="111"/>
+    <nd ref="112"/>
+    <nd ref="113"/>
+    <nd ref="114"/>
+    <nd ref="111"/>
+    <tag k="leisure" v="park"/>
+    <tag k="name" v="Fixture Big Park"/>
+    <tag k="operator" v="City"/>
+  </way>
+  <way id="120" version="1" timestamp="2026-10-18T12:00:00Z">
+    <nd ref="121"/>
+    <nd ref="122"/>
+    <nd ref="123"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="ref" v="US 101"/>
+    <tag k="name" v="Ventura Freeway"/>
+    <tag k="lanes" v="4"/>
+  </way>
+  <way id="130" version="1" timestamp="2026-10-18T12:00:00Z">
+    <nd ref="131"/>
+    <nd ref="132"/>
+    <tag k="railway" v="rail"/>
+    <tag k="service" v="yard"/>
+  </way>
+  <way id="135" version="1" timestamp="2026-10-18T12:00:00Z">
+    <nd ref="136"/>
+    <nd ref="137"/>
+    <tag k="railway" v="rail"/>
+    <tag k="usage" v="main"/>
+    <tag k="name" v="Coast Line"/>
+  </way>
+  <way id="140" version="1" timestamp="2026-10-18T12:00:00Z">
+    <nd ref="141"/>
+    <nd ref="142"/>
+    <tag k="waterway" v="river"/>
+    <tag k="name" v="Fixture River"/>
+  </way>
+  <way id="145" version="1" timestamp="2026-10-18T12:00:00Z">
+    <nd ref="146"/>
+    <nd ref="147"/>
+    <tag k="waterway" v="river"/>
+    <tag k="name" v="Far River"/>
+  </way>
+  <way id="150" version="1" timestamp="2026-10-18T12:00:00Z">
+    <nd ref="151"/>
+    <nd ref="152"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Oak St"/>
+  </way>
+  <way id="160" version="1" timestamp="2026-10-18T12:00:00Z">
+    <nd ref="161"/>
+    <nd ref="162"/>
+    <nd ref="163"/>
+    <nd ref="161"/>
+    <tag k="amenity" v="college"/>
+    <tag k="name" v="Fixture Community College"/>
+  </way>
+  <way id="201" version="1" timestamp="2026-10-18T12:00:00Z">
+    <nd ref="203"/>
+    <nd ref="204"/>
+    <nd ref="205"/>
+    <nd ref="203"/>
+  </way>
+  <way id="202" version="1" timestamp="2026-10-18T12:00:00Z">
+    <nd ref="206"/>
+    <nd ref="207"/>
+    <nd ref="208"/>
+    <nd ref="206"/>
+  </way>
+  <relation id="200" version="1" timestamp="2026-10-18T12:00:00Z">
+    <member type="way" ref="201" role="outer"/>
+    <member type="way" ref="202" role="outer"/>
+    <tag k="type" v="multipolygon"/>
+    <tag k="leisure" v="park"/>
+    <tag k="name" v="Fixture Relation Park"/>
+  </relation>
+</osm>

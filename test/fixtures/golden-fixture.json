@@ -1,0 +1,6 @@
+{ "about": "Golden probe for the unit-test fixture only.", "places": [
+ { "label": "Fixture Library", "layer": "pois", "tag": "amenity=library", "name": "Fixture Library", "lat": 34.286, "lng": -119.294, "withinM": 200 },
+ { "label": "Fixture Big Park", "layer": "pois", "tag": "leisure=park", "name": "Big Park", "lat": 34.3, "lng": -119.3, "withinM": 500 },
+ { "label": "Fixture Relation Park", "layer": "pois", "tag": "leisure=park", "name": "Relation Park", "lat": 34.274, "lng": -119.277, "withinM": 300 },
+ { "label": "Fixture Substation", "layer": "substations", "tag": "power=substation", "name": "Fixture", "lat": 34.295, "lng": -119.285, "withinM": 100 }
+]}
