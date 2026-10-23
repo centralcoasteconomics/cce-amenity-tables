@@ -1,0 +1,83 @@
+name: weekly-amenity-tiles
+on:
+  schedule:
+    - cron: "41 9 * * 1"   # Mondays 09:41 UTC (about 2:41 AM Pacific); Geofabrik's extract of the day before
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: amenity-tiles
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      NODE_OPTIONS: --max-old-space-size=8192
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+
+      - name: Install osmium-tool
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq osmium-tool && osmium --version | head -1
+
+      # Unit tests and the osmium end-to-end test on the fixture (the app-parity test skips here,
+      # because the app is not in this runner; it runs on the Mac before any change is pushed).
+      - name: Test
+        run: npm test
+
+      # The extract is downloaded inside the runner and never committed. The .md5 Geofabrik
+      # publishes beside it catches a truncated or mid-update download; three attempts, then red.
+      - name: Download the Geofabrik California extract
+        run: |
+          mkdir -p /tmp/osm && cd /tmp/osm
+          ok=0
+          for i in 1 2 3; do
+            curl -fsSL --retry 3 --retry-delay 30 -o california-latest.osm.pbf https://download.geofabrik.de/north-america/us/california-latest.osm.pbf \
+              && curl -fsSL --retry 3 -o california-latest.osm.pbf.md5 https://download.geofabrik.de/north-america/us/california-latest.osm.pbf.md5 \
+              && md5sum -c california-latest.osm.pbf.md5 && { ok=1; break; }
+            echo "download attempt $i failed; waiting"; sleep 120
+          done
+          [ "$ok" = 1 ] || { echo "Could not download a verified extract; the published tiles stay as they are."; exit 1; }
+          ls -la /tmp/osm
+
+      # build.mjs exits non-zero when a guard holds the run (collapse, category drop, golden probe,
+      # stale or older extract). It must still reach the state step, so the run is recorded, and the
+      # last step turns the run red. It sets `status` = publish | skip | held.
+      - id: build
+        run: node build.mjs --pbf /tmp/osm/california-latest.osm.pbf --work /tmp/osm/work --source "Geofabrik california-latest.osm.pbf"
+        continue-on-error: true
+
+      # Green: the tiles replace the data branch whole, as one commit (force-pushed, so the repo
+      # does not grow by a statewide copy every week). Held or skipped: nothing is pushed and the
+      # last good tiles stay live at the same URLs.
+      - name: Publish tiles to the data branch
+        id: publish
+        if: steps.build.outcome == 'success' && steps.build.outputs.status == 'publish'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd out
+          git init -q -b data
+          git config user.name "cce-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -q -m "tiles: OSM extract of ${{ steps.build.outputs.osm }}"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" data
+          echo "published $(ls tiles | wc -l) tiles"
+
+      - name: Record the run in state/
+        if: always() && hashFiles('result.json') != ''
+        run: |
+          if [ "${{ steps.publish.outcome }}" = "success" ]; then node record.mjs --published; else node record.mjs; fi
+          git config user.name "cce-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/
+          git diff --cached --quiet || (git commit -m "state $(date -u +%F)" && git push)
+
+      - name: Fail the run if the tiles were held
+        if: steps.build.outcome == 'failure' || steps.publish.outcome == 'failure'
+        run: |
+          echo "Not published: see the build step log. The last good tiles are still live."
+          exit 1
