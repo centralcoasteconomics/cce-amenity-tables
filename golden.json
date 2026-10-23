@@ -1,0 +1,24 @@
+{
+ "about": "Golden probe: long-standing public places that must be in every published build. Each is looked up through reader.mjs in the tiles just built: an element with `tag` whose name matches `name` (regex, any case) within `withinM` metres of lat/lng. One miss holds the run. Checked against OSM (Nominatim) on 2026-10-23; the OSM ids are for reference only and are NOT matched, because a node can be remapped as a way. If a place is genuinely renamed or demolished, edit this file in a reviewed commit, never to make a red run green.",
+ "checked": "2026-10-23",
+ "places": [
+  { "label": "Los Angeles Central Library", "layer": "pois", "tag": "amenity=library", "name": "Los Angeles Public Library|Central Library", "lat": 34.0503, "lng": -118.2551, "withinM": 300, "ref": "way/428021732" },
+  { "label": "San Francisco Main Library", "layer": "pois", "tag": "amenity=library", "name": "San Francisco Public Library|Main Library", "lat": 37.7792, "lng": -122.4158, "withinM": 300, "ref": "way/24446086" },
+  { "label": "San Diego Central Library", "layer": "pois", "tag": "amenity=library", "name": "San Diego Central Library", "lat": 32.7089, "lng": -117.1541, "withinM": 300, "ref": "way/377357193" },
+  { "label": "Sacramento Central Library", "layer": "pois", "tag": "amenity=library", "name": "Sacramento Central", "lat": 38.5816, "lng": -121.4952, "withinM": 300, "ref": "way/331127165" },
+  { "label": "E.P. Foster Library, Ventura", "layer": "pois", "tag": "amenity=library", "name": "Foster", "lat": 34.2811, "lng": -119.2908, "withinM": 300, "ref": "way/398398712" },
+  { "label": "Santa Barbara Public Library (Central)", "layer": "pois", "tag": "amenity=library", "name": "Santa Barbara Public Library", "lat": 34.4239, "lng": -119.7032, "withinM": 300, "ref": "way/234948893" },
+  { "label": "Beale Memorial Library, Bakersfield", "layer": "pois", "tag": "amenity=library", "name": "Beale", "lat": 35.3727, "lng": -119.0101, "withinM": 300, "ref": "way/59330449" },
+  { "label": "Redding Library", "layer": "pois", "tag": "amenity=library", "name": "Redding", "lat": 40.5738, "lng": -122.3853, "withinM": 300, "ref": "way/472461912" },
+  { "label": "Eureka Main Library", "layer": "pois", "tag": "amenity=library", "name": "Eureka", "lat": 40.8059, "lng": -124.1574, "withinM": 300, "ref": "way/687695028" },
+  { "label": "Cedars-Sinai Medical Center", "layer": "pois", "tag": "amenity=hospital", "name": "Cedars", "lat": 34.0752, "lng": -118.3811, "withinM": 400, "ref": "way/534711293" },
+  { "label": "Zuckerberg San Francisco General Hospital", "layer": "pois", "tag": "amenity=hospital", "name": "San Francisco General", "lat": 37.7568, "lng": -122.4053, "withinM": 400, "ref": "way/24446045" },
+  { "label": "Kern Medical Center, Bakersfield", "layer": "pois", "tag": "amenity=hospital", "name": "Kern Medical", "lat": 35.3827, "lng": -118.9702, "withinM": 400, "ref": "way/59253948" },
+  { "label": "Community Regional Medical Center, Fresno", "layer": "pois", "tag": "amenity=hospital", "name": "Community Regional", "lat": 36.7434, "lng": -119.7849, "withinM": 400, "ref": "way/61616743" },
+  { "label": "Santa Barbara Cottage Hospital", "layer": "pois", "tag": "amenity=hospital", "name": "Cottage", "lat": 34.4298, "lng": -119.7236, "withinM": 400, "ref": "node/6545704086" },
+  { "label": "Golden Gate Park, San Francisco", "layer": "pois", "tag": "leisure=park", "name": "Golden Gate Park", "lat": 37.7694, "lng": -122.4822, "withinM": 800, "ref": "way/158602261" },
+  { "label": "Balboa Park, San Diego", "layer": "pois", "tag": "leisure=park", "name": "Balboa Park", "lat": 32.7317, "lng": -117.1465, "withinM": 800, "ref": "relation/15082953" },
+  { "label": "Alameda Park, Santa Barbara", "layer": "pois", "tag": "leisure=park", "name": "Alameda Park", "lat": 34.4278, "lng": -119.7054, "withinM": 300, "ref": "way/839140242" },
+  { "label": "Los Angeles Union Station", "layer": "pois", "tag": "railway=station", "name": "Union Station", "lat": 34.0559, "lng": -118.2348, "withinM": 400, "ref": "node/5362648027" }
+ ]
+}
