@@ -1,0 +1,17 @@
+[
+ {
+  "buildDate": "2026-10-23T10:44:55.738Z",
+  "osmTimestamp": "2026-10-20T20:23:47Z",
+  "status": "published",
+  "totals": {
+   "pois": 106011,
+   "substations": 4033,
+   "barriers": 75294,
+   "tiles": 3096,
+   "bytes": 20678621
+  },
+  "red": [],
+  "warn": [],
+  "goldenMissing": []
+ }
+]
