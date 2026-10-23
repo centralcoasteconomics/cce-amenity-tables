@@ -1,0 +1,14 @@
+{
+  "name": "cce-amenity-tables",
+  "private": true,
+  "type": "module",
+  "description": "Weekly California extract of the OpenStreetMap amenities Site Due Diligence scores, as 0.1 degree gzip JSON tiles, with a reader that answers in Overpass's element shape.",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=20" },
+  "main": "reader.mjs",
+  "types": "reader.d.ts",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "build": "node build.mjs"
+  }
+}
