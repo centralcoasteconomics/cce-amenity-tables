@@ -13,5 +13,20 @@
   "red": [],
   "warn": [],
   "goldenMissing": []
+ },
+ {
+  "buildDate": "2026-10-26T16:22:32.153Z",
+  "osmTimestamp": "2026-10-25T21:21:21Z",
+  "status": "published",
+  "totals": {
+   "pois": 106049,
+   "substations": 4037,
+   "barriers": 75299,
+   "tiles": 3097,
+   "bytes": 20668944
+  },
+  "red": [],
+  "warn": [],
+  "goldenMissing": []
  }
 ]
